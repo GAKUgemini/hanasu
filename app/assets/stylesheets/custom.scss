@@ -1,7 +1,12 @@
 
-body
+.top-hero-image
 {
+  width: 100vw;
+  height: 100vh;
     background: image-url('login.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -205,7 +210,7 @@ h1, h2 {
   }
 }
 
-.top-hero-wrapper {
+.top-body {
   width: 100vw;
   height: 100vh;
   background: image-url('top.jpg');
