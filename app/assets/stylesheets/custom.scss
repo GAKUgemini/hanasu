@@ -6,7 +6,12 @@ body
     padding: 0;
     margin: 0;
 }
-
+.text-purple1{
+  color:#FF6347;
+}
+.text-purple2{
+  color:#FF6347;
+}
 .wrap
 {
     width: 100%;
@@ -20,7 +25,6 @@ body
 
 p.form-title
 {
-    font-family: 'Open Sans' , sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
@@ -45,7 +49,6 @@ form.login input[type="text"], form.login input[type="password"]
     border: 0;
     border-bottom: 1px solid #FFFFFF;
     outline: 0;
-    font-style: italic;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -144,7 +147,6 @@ form.login a:hover
     border: 0;
     border-bottom: 1px solid #000000;
     outline: 0;
-    font-style: italic;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -179,4 +181,49 @@ form.login a:hover
     background-color: rgba(0, 0, 0, 0.66);
     padding: 10px;
     left: 45%;
+}
+
+/*ここからhelpページのscss内容*/
+h1, h2 {
+  font-weight: 100;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.btn-white {
+  color: #fff;
+  border: 1px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.top-hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: image-url('top.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.top-hero-container {
+  padding-top: 220px;
+  h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
 }
