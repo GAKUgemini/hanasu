@@ -120,10 +120,10 @@ body {
   background-color: #fafafa;
   .topic-index-single {
     background-color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 30px;
-    border: 1px solid #e6ecf0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    border: 3px solid 	#ffffff;
     border-radius: 3px;
     .topic-author {
       padding-right: 20px;
@@ -146,5 +146,18 @@ body {
       height: 30px;
       margin-left: 20px;
     }
+  }
+  .profile-image{
+    background-color: #fff;
+    border: 3px solid 	#ffffff;
+    border-radius: 3px
+
+  }
+  .profile-text{
+    background-color: #fff;
+    padding-top: 10px;
+    border: 3px solid 	#ffffff;
+    border-radius: 3px
+
   }
 }
