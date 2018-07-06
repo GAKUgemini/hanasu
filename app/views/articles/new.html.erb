@@ -1,10 +1,20 @@
-<div class="form-group">
-  <label for="Tweet Area" class="col-lg-2 control-label">Tweet Area</label>
-    <%= form_for :article, url: articles_path do |f| %>
-    <div class="form-group">
-      <%= f.label :text %>
-      <%= f.text_area :text, class: 'form-control'%>
+  <div class="container">
+    <div class="tweet_new_box">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-5" ><div class=Tweet_Area><h1 class="text-center">Tweet</h1></div></div>
+      </div>
+        <div class="row">
+          <%= form_for :article, url: articles_path do |f| %>
+            <div class="form-group">
+              <div class="col-md-2 col-md-offset-5">
+                <%= f.label :textarea %>
+                <%= f.text_area :text, class: 'form-control'%>
+              </div>
+                <%= f.submit 'Tweet', class: 'btn btn-block' %>
+            </div>
+
+          <% end %>
+
+        </div>
     </div>
-      <%= f.submit 'Tweet', class: 'btn btn-black btn-block' %>
-    <% end %>
-</div>
+  </div>
