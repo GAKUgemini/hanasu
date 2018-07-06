@@ -1,7 +1,7 @@
   <div class="container">
     <div class="tweet_new_box">
       <div class="row">
-        <div class="col-md-2 col-md-offset-5" ><div class=Tweet_Area><h1 class="text-center">Tweet</h1></div></div>
+        <div class="col-md-2 col-md-offset-5" ><div class=Tweet_Area><h1 class="text-center">whisper</h1></div></div>
       </div>
         <div class="row">
           <%= form_for :article, url: articles_path do |f| %>
@@ -10,7 +10,7 @@
                 <%= f.label :textarea %>
                 <%= f.text_area :text, class: 'form-control'%>
               </div>
-                <%= f.submit 'Tweet', class: 'btn btn-block' %>
+                <%= f.submit 'whisper', class: 'btn btn-block' %>
             </div>
 
           <% end %>
