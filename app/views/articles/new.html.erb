@@ -1,0 +1,10 @@
+<div class="form-group">
+  <label for="Tweet Area" class="col-lg-2 control-label">Tweet Area</label>
+    <%= form_for :article, url: articles_path do |f| %>
+    <div class="form-group">
+      <%= f.label :text %>
+      <%= f.text_area :text, class: 'form-control'%>
+    </div>
+      <%= f.submit 'Tweet', class: 'btn btn-black btn-block' %>
+    <% end %>
+</div>
