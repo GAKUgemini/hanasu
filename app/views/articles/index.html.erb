@@ -1,15 +1,39 @@
-<h1>Listing articles</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
-
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="team-clean">
+  <div class="container-tweet-all-view">
+    <div class="intro">
+      <h2 class="text-center">all tweets</h2>
+      <p class="text-center">みんなの近況をチェックしよう！</p>
+    </div>
+    <% @articles.each do |article| %>
+        <div class="row-people">
+          <div class="col-md-6 col-lg-4 item">
+            <img class="rounded-circle" src="#"/>
+            <h3 class="name">ユーザー名</h3>
+            <p class="title">ユーザー名</p>
+            <p class="description"><%= article.text %></p>
+            <%= link_to 'Show', article_path(article) %>
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Destroy', article_path(article),method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <img class="rounded-circle" src="#"/>
+            <h3 class="name">ユーザー名</h3>
+            <p class="title">ユーザー名</p>
+            <p class="description"><%= article.text %></p>
+            <%= link_to 'Show', article_path(article) %>
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Destroy', article_path(article),method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <img class="rounded-circle" src="#"/>
+            <h3 class="name">ユーザー名</h3>
+            <p class="title">ユーザー名</p>
+            <p class="description"><%= article.text %></p>
+            <%= link_to 'Show', article_path(article) %>
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Destroy', article_path(article),method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+    <% end %>
+    </div>
+</div>
